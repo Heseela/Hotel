@@ -31,7 +31,6 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
 
   return (
     <>
-      {/* Quick View Modal */}
       {quickView !== null && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -58,14 +57,12 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
         </div>
       )}
 
-      {/* Rooms Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {rooms.map((room) => (
           <div
             key={room.id}
             className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
           >
-            {/* Image Container */}
             <div className="relative h-56 overflow-hidden">
               <Image
                 src={room.images[0]}
@@ -75,7 +72,6 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               
-              {/* Badges */}
               <div className="absolute top-4 left-4 flex flex-col gap-2">
                 {room.discount && (
                   <div className="bg-primary text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
@@ -89,7 +85,6 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
                 )}
               </div>
 
-              {/* Favorite Button */}
               <button
                 onClick={() => toggleFavorite(room.id)}
                 className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
@@ -104,7 +99,6 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
                 />
               </button>
 
-              {/* Availability Overlay */}
               {!room.isAvailable && (
                 <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
                   <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full text-secondary font-bold shadow-lg">
@@ -114,9 +108,7 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
               )}
             </div>
 
-            {/* Content */}
             <div className="p-6">
-              {/* Header */}
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h3 className="text-xl font-heading font-bold text-secondary mb-1 group-hover:text-primary transition-colors">
@@ -144,12 +136,10 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
                 </div>
               </div>
 
-              {/* Description */}
               <p className="text-gray-600 mb-6 line-clamp-2 text-sm">
                 {room.description}
               </p>
 
-              {/* Features */}
               <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
                 <div className="flex items-center gap-1">
                   <Users className="w-4 h-4" />
@@ -165,7 +155,6 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
                 </div>
               </div>
 
-              {/* Key Amenities */}
               <div className="mb-6">
                 <div className="flex flex-wrap gap-2">
                   {room.amenities.slice(0, 3).map((amenity, index) => (
@@ -185,7 +174,6 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
                 </div>
               </div>
 
-              {/* Action Buttons */}
               <div className="flex gap-3">
                 <button
                   className={`flex-1 py-3 rounded-lg font-medium transition-colors ${

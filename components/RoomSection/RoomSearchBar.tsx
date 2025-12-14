@@ -16,10 +16,9 @@ export default function RoomSearchBar({
   activeFilterCount
 }: RoomSearchBarProps) {
   return (
-    <section className="sticky top-24 z-40 bg-white shadow-lg transition-all duration-300">
+    <section className="mt-6 transition-all duration-300">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-          {/* Search Bar */}
           <div className="flex-1 w-full md:w-auto">
             <div className="relative">
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -41,7 +40,6 @@ export default function RoomSearchBar({
             </div>
           </div>
 
-          {/* Filter Toggle (Mobile) */}
           <button
             onClick={onFilterToggle}
             className="md:hidden flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"

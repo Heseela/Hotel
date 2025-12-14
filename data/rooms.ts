@@ -14,7 +14,7 @@ export const initialRooms: Room[] = [
     category: 'villa',
     amenities: ['Private Pool', 'Butler Service', 'Gourmet Kitchen', 'Home Theater', 'Wine Cellar', 'Private Garden'],
     features: ['Ocean View', 'Private Garden', 'Jacuzzi', 'Smart Home', 'Direct Beach Access'],
-    images: ['/images/rooms/villa-1.jpg'],
+    images: ['/room-1.jpg'],
     isAvailable: true,
     discount: 25,
     isFeatured: true,

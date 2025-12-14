@@ -2,8 +2,6 @@
 
 import { Category, FilterOptions } from "@/types"
 import RoomFilter from "./RoomsFilter"
-
-
 interface RoomFilterSidebarProps {
   filters: FilterOptions
   categories: Category[]
@@ -25,7 +23,6 @@ export default function RoomFilterSidebar({
 }: RoomFilterSidebarProps) {
   return (
     <>
-      {/* Mobile Overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
@@ -33,29 +30,32 @@ export default function RoomFilterSidebar({
         />
       )}
 
-      {/* Sidebar */}
       <div
         className={`
-          fixed lg:sticky lg:top-40 z-50
-          h-[calc(100vh-5rem)] lg:h-fit
-          top-20 left-0 lg:left-auto
+          lg:block
+          ${isOpen ? 'fixed' : 'hidden lg:block'}
+          top-0 left-0 lg:relative lg:top-auto lg:left-auto
+          h-screen lg:h-auto
           w-80 lg:w-auto
-          transform transition-transform duration-300 ease-in-out
-          ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
           bg-white lg:bg-transparent
+          z-50 lg:z-auto
           overflow-y-auto lg:overflow-visible
+          transition-transform duration-300 ease-in-out lg:transform-none
+          ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         `}
       >
-        <div className="lg:sticky lg:top-40 p-6 lg:p-0">
-          <div className="lg:hidden flex items-center justify-between mb-6">
+        <div className="p-6 lg:p-0">
+          <div className="lg:hidden flex items-center justify-between mb-6 pb-6 border-b border-gray-200">
             <h3 className="text-xl font-bold text-secondary">Filters</h3>
             <button
               onClick={onClose}
-              className="text-gray-500 hover:text-gray-700"
+              className="text-gray-500 hover:text-gray-700 text-2xl"
+              aria-label="Close filters"
             >
               ✕
             </button>
           </div>
+
           <RoomFilter
             filters={filters}
             categories={categories}

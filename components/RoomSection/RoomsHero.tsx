@@ -6,7 +6,7 @@ export default function RoomsHero() {
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/rooms-hero.jpg"
+          src="/room-5.jpg"
           alt="Luxury hotel room with ocean view"
           fill
           className="object-cover"
