@@ -47,11 +47,9 @@ export default function AboutHistory() {
             {milestones.map((milestone, index) => (
               <div
                 key={milestone.year}
-                className={`relative flex flex-col md:flex-row items-center ${
-                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                }`}
+                className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''
+                  }`}
               >
-                {/* Year */}
                 <div className="md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
                   <div className={`text-center ${index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:text-left md:pl-12'}`}>
                     <div className="text-5xl font-bold text-primary opacity-20">{milestone.year}</div>
@@ -82,16 +80,16 @@ export default function AboutHistory() {
           <div className="bg-primary text-white p-8 rounded-2xl">
             <h3 className="text-2xl font-heading font-bold mb-4">Our Mission</h3>
             <p className="opacity-90">
-              To provide exceptional luxury experiences that exceed expectations, 
-              creating lasting memories through impeccable service, world-class amenities, 
+              To provide exceptional luxury experiences that exceed expectations,
+              creating lasting memories through impeccable service, world-class amenities,
               and genuine hospitality that celebrates each guest's unique journey.
             </p>
           </div>
           <div className="bg-secondary text-white p-8 rounded-2xl">
             <h3 className="text-2xl font-heading font-bold mb-4">Our Vision</h3>
             <p className="opacity-90">
-              To be the world's most admired luxury hotel brand, setting new standards 
-              in sustainable luxury hospitality while maintaining our commitment to 
+              To be the world's most admired luxury hotel brand, setting new standards
+              in sustainable luxury hospitality while maintaining our commitment to
               personalized service and cultural authenticity.
             </p>
           </div>

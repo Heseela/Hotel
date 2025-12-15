@@ -68,8 +68,7 @@ export default function AboutFeatures() {
           ))}
         </div>
 
-        {/* Values Section */}
-        <div className="mt-20 bg-linear-to-r from-primary to-primary/80 rounded-3xl p-12 text-white">
+        <div className="mt-20 bg-linear-to-r from-secondary to-primary rounded-3xl p-12 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl md:text-4xl font-heading font-bold mb-6">

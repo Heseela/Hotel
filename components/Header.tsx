@@ -15,10 +15,10 @@ export default function Header() {
 
     const navItems = [
         { label: 'Home', href: '/' },
-        { label: 'Rooms & Suites', href: '/rooms' },
-        { label: 'Services', href: '/services' },
-        { label: 'Gallery', href: '/gallery' },
         { label: 'About', href: '/about' },
+        { label: 'Rooms & Suites', href: '/rooms' },
+        { label: 'Blog', href: '/blog' },
+        { label: 'Gallery', href: '/gallery' },
         { label: 'Contact', href: '/contact' },
     ]
 
@@ -48,13 +48,10 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* Main Navigation */}
             <nav className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
-                    {/* Logo */}
                     <div className="flex items-center space-x-3">
                         <div className="w-10 h-10 bg-linear-to-br from-primary to-primary/80 rounded-full flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">H</span>
                         </div>
                         <div className="flex flex-col">
                             <span className="text-2xl font-heading font-bold text-secondary leading-tight">

@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Grand Horizon Hotel & Resort',
+  title: 'Hotel',
   description: 'Luxury hotel with breathtaking views and world-class amenities',
 }
 

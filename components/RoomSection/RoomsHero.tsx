@@ -1,9 +1,9 @@
-import { Calendar, Users, Star, ArrowRight } from 'lucide-react'
+import { Calendar, Users, Star } from 'lucide-react'
 import Image from 'next/image'
 
 export default function RoomsHero() {
   return (
-    <section className="relative pt-24 pb-16 md:pt-32 md:pb-24">
+    <section className="relative pt-24 pb-16 md:pt-44 md:pb-44">
       <div className="absolute inset-0 z-0">
         <Image
           src="/room-5.jpg"
@@ -29,7 +29,6 @@ export default function RoomsHero() {
             each designed to provide the ultimate comfort and relaxation.
           </p>
 
-          {/* Quick Stats */}
           <div className="flex flex-wrap gap-6 mb-8">
             <div className="flex items-center gap-2 text-white">
               <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center backdrop-blur-sm">
@@ -60,10 +59,7 @@ export default function RoomsHero() {
             </div>
           </div>
 
-          <button className="group bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors font-medium flex items-center gap-2">
-            View All Rooms
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+         
         </div>
       </div>
     </section>

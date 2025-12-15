@@ -4,7 +4,6 @@ import AboutHistory from "@/components/AboutSection/AboutHistory";
 import AboutTeam from "@/components/AboutSection/AboutTeam";
 import AboutTestimonials from "@/components/AboutSection/AboutTestimonials";
 
-
 export default function AboutPage() {
   return (
     <main>

@@ -3,7 +3,6 @@
 import { ChevronRight } from 'lucide-react'
 import { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const galleryImages = [
     {
@@ -56,7 +55,7 @@ const galleryImages = [
     },
 ]
 
-export default function Gallery() {
+export default function GalleryCard() {
     const [activeCategory, setActiveCategory] = useState('All')
 
     const categories = ['All', 'Rooms', 'Pool', 'Dining', 'Spa', 'Views', 'Lobby']
@@ -120,17 +119,6 @@ export default function Gallery() {
                             </div>
                         </div>
                     ))}
-                </div>
-
-
-                <div className="text-center mt-12">
-                    <Link
-                        href="/gallery"
-                        className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors font-medium inline-flex items-center gap-2"
-                    >
-                        View All Photos
-                        <ChevronRight size={20} />
-                    </Link>
                 </div>
             </div>
         </section>

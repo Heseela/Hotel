@@ -1,6 +1,6 @@
 'use client'
 
-import { Room } from '@/types'
+import { Room } from '@/types/room.types'
 import { Star, Users, Maximize2, Check, Heart, Eye, Bed } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'

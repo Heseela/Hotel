@@ -1,6 +1,6 @@
 'use client'
 
-import { Category, FilterOptions } from "@/types"
+import { Category, FilterOptions } from "@/types/room.types"
 import RoomFilter from "./RoomsFilter"
 interface RoomFilterSidebarProps {
   filters: FilterOptions

@@ -1,6 +1,5 @@
 'use client'
 
-import { Linkedin, Twitter, Instagram, Mail } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -106,65 +105,6 @@ export default function AboutTeam() {
             </div>
           ))}
         </div>
-
-        {/* <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="relative h-64 lg:h-full min-h-[300px]">
-              <Image
-                src={activeMember.image}
-                alt={activeMember.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
-
-            <div className="p-8 lg:p-12">
-              <div className="mb-6">
-                <h3 className="text-2xl font-heading font-bold text-secondary mb-2">
-                  {activeMember.name}
-                </h3>
-                <div className="text-primary font-medium mb-4">{activeMember.role}</div>
-                <p className="text-gray-600">{activeMember.bio}</p>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <a
-                  href={activeMember.social.linkedin}
-                  className="w-10 h-10 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a
-                  href={activeMember.social.twitter}
-                  className="w-10 h-10 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-colors"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a>
-                <a
-                  href={activeMember.social.instagram}
-                  className="w-10 h-10 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a
-                  href={`mailto:${activeMember.social.email}`}
-                  className="w-10 h-10 bg-gray-100 hover:bg-primary hover:text-white rounded-full flex items-center justify-center transition-colors"
-                  aria-label="Email"
-                >
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
-
-              <button className="mt-8 bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/90 transition-colors font-medium">
-                Contact {activeMember.name.split(' ')[0]}
-              </button>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   )

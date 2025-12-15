@@ -1,4 +1,4 @@
-import { Room } from '../types'
+import { Room } from "@/types/room.types"
 
 export const initialRooms: Room[] = [
   {
@@ -31,7 +31,7 @@ export const initialRooms: Room[] = [
     category: 'suite',
     amenities: ['Jacuzzi', 'Living Area', 'Work Desk', 'Kitchenette', 'High-Speed WiFi'],
     features: ['City View', 'Balcony', 'High-Speed WiFi', 'Office Setup'],
-    images: ['/images/rooms/suite-1.jpg'],
+    images:['/room-2.jpg'],
     isAvailable: true,
   },
   {
@@ -46,7 +46,7 @@ export const initialRooms: Room[] = [
     category: 'deluxe',
     amenities: ['Ocean View Balcony', 'King Size Bed', 'Smart TV', 'Mini Bar', 'Coffee Machine'],
     features: ['Sea View', 'Private Balcony', 'Bathtub', 'Romantic Setup'],
-    images: ['/images/rooms/deluxe-1.jpg'],
+    images: ['/room-6.jpg'],
     isAvailable: true,
   },
   {
@@ -61,7 +61,7 @@ export const initialRooms: Room[] = [
     category: 'standard',
     amenities: ['Garden View', 'Queen Bed', 'Work Desk', 'Free WiFi', 'TV'],
     features: ['Garden View', 'Coffee Maker', 'Safe', 'Work Desk'],
-    images: ['/images/rooms/standard-1.jpg'],
+    images: ['/room-2.jpg'],
     isAvailable: true,
   },
   {
@@ -76,7 +76,7 @@ export const initialRooms: Room[] = [
     category: 'family',
     amenities: ['Two Bedrooms', 'Kitchen', 'Play Area', 'Two Bathrooms', 'Game Console'],
     features: ['Pool View', 'Connecting Rooms', 'Game Console', 'Kids Menu'],
-    images: ['/images/rooms/family-1.jpg'],
+    images: ['/hero.jpg'],
     isAvailable: true,
   },
   {
@@ -91,7 +91,7 @@ export const initialRooms: Room[] = [
     category: 'suite',
     amenities: ['Romantic Decor', 'Champagne', 'Spa Bath', 'Private Balcony', 'Couples Spa'],
     features: ['Ocean View', 'Romantic Setup', 'Couples Spa', 'Private Dinner'],
-    images: ['/images/rooms/honeymoon-1.jpg'],
+    images: ['/room-1.jpg'],
     isAvailable: false,
   },
   {
@@ -107,7 +107,7 @@ export const initialRooms: Room[] = [
     category: 'suite',
     amenities: ['Ocean Front', 'Living Room', 'Dining Area', 'Wet Bar', 'Fireplace'],
     features: ['Panoramic Views', 'Private Terrace', 'Fireplace', 'Wine Service'],
-    images: ['/images/rooms/premium-1.jpg'],
+    images: ['/lobby.jpg'],
     isAvailable: true,
     discount: 22,
   },
@@ -123,7 +123,7 @@ export const initialRooms: Room[] = [
     category: 'villa',
     amenities: ['Private Plunge Pool', 'Outdoor Shower', 'Garden', 'Outdoor Dining', 'BBQ Area'],
     features: ['Garden View', 'Private Pool', 'Outdoor Living', 'Sun Deck'],
-    images: ['/images/rooms/garden-1.jpg'],
+    images: ['/spa.jpg'],
     isAvailable: true,
   },
   {
@@ -138,7 +138,7 @@ export const initialRooms: Room[] = [
     category: 'suite',
     amenities: ['Work Desk', 'Meeting Area', 'Printer', 'High-Speed WiFi', 'Coffee Station'],
     features: ['City View', 'Office Setup', 'Conference Call', 'Express Check-in'],
-    images: ['/images/rooms/business-1.jpg'],
+    images: ['/pool.jpg'],
     isAvailable: true,
   },
 ]

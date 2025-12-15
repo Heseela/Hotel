@@ -2,13 +2,13 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { Info, Phone } from 'lucide-react'
-import { FilterOptions, Room } from '@/types'
 import RoomsHero from '@/components/RoomSection/RoomsHero'
 import RoomSearchBar from '@/components/RoomSection/RoomSearchBar'
 import RoomFilterSidebar from '@/components/RoomSection/RoomFilterSidebar'
 import { allAmenities, categories, initialRooms } from '@/data/rooms'
 import RoomGrid from '@/components/RoomSection/RoomGrid'
 import RoomSort from '@/components/RoomSection/RoomSort'
+import { FilterOptions, Room } from '@/types/room.types'
 
 export default function RoomsPage() {
   const [rooms] = useState<Room[]>(initialRooms)
@@ -252,7 +252,7 @@ export default function RoomsPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-secondary text-white">
+      <section className="py-16 bg-linear-to-r from-secondary to-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
             Special Offers Available

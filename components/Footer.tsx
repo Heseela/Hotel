@@ -4,7 +4,7 @@ export default function Footer() {
   const quickLinks = [
     { label: 'Home', href: '#' },
     { label: 'Rooms & Suites', href: '#' },
-    { label: 'Services', href: '#' },
+    { label: 'Blog', href: '#' },
     { label: 'Gallery', href: '#' },
     { label: 'About Us', href: '#' },
     { label: 'Contact', href: '#' },

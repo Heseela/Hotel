@@ -2,6 +2,7 @@
 
 import { Star, Users, Maximize2, Check, ArrowRight, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 
 const rooms = [
@@ -182,13 +183,17 @@ export default function Rooms() {
                         </div>
                     ))}
                 </div>
-
+                
                 <div className="text-center mt-12">
-                    <button className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors font-medium inline-flex items-center gap-2">
-                        View All Photos
+                    <Link
+                        href="/rooms"
+                        className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors font-medium inline-flex items-center gap-2"
+                    >
+                        View All Rooms
                         <ChevronRight size={20} />
-                    </button>
+                    </Link>
                 </div>
+
             </div>
         </section>
     )

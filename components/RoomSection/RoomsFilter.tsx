@@ -1,7 +1,7 @@
 'use client'
 
 import { guestOptions } from '@/data/rooms'
-import { Category, FilterOptions } from '@/types'
+import { Category, FilterOptions } from '@/types/room.types'
 import { X, Filter, DollarSign, Users, Check } from 'lucide-react'
 
 interface RoomFilterProps {
