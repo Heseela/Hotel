@@ -1,10 +1,10 @@
 'use client'
 
-import { ContactInfo } from '@/types/contact.types'
+import type { ContactInfo as ContactInfoType } from '@/types/contact.types'
 import { ExternalLink, Phone, Mail, MapPin, Clock, Users, Shield } from 'lucide-react'
 
 interface ContactInfoProps {
-  contactInfo: ContactInfo[]
+  contactInfo: ContactInfoType[]
 }
 
 export default function ContactInfo({ contactInfo }: ContactInfoProps) {

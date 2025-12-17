@@ -76,12 +76,10 @@ export default function SingleRoom({ room }: SingleRoomProps) {
       })
     } else {
       navigator.clipboard.writeText(window.location.href)
-      // You can add a toast notification here
       alert('Link copied to clipboard!')
     }
   }
 
-  // Icon mapping for amenities
   const amenitiesIcons: Record<string, React.ReactNode> = {
     'Private Pool': <Waves className="h-5 w-5" />,
     'Butler Service': <Sparkles className="h-5 w-5" />,
@@ -132,7 +130,6 @@ export default function SingleRoom({ room }: SingleRoomProps) {
     return basePrice + serviceFee + taxes - discount
   }
 
-  // Get category label
   const getCategoryLabel = () => {
     const labels = {
       suite: 'Suite',
@@ -146,8 +143,7 @@ export default function SingleRoom({ room }: SingleRoomProps) {
 
   return (
     <>
-      {/* Back Navigation */}
-      <div className="border-b border-gray-100 bg-white sticky top-0 z-40 backdrop-blur-sm bg-white/95">
+      <div className="border-b border-gray-100 sticky top-0 z-40 backdrop-blur-sm bg-white/95">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link 
@@ -278,7 +274,7 @@ export default function SingleRoom({ room }: SingleRoomProps) {
                       <button
                         key={index}
                         onClick={() => setSelectedImage(index)}
-                        className={`relative h-20 w-32 flex-shrink-0 overflow-hidden rounded-lg transition-all ${selectedImage === index ? 'ring-2 ring-primary' : 'opacity-70 hover:opacity-100'}`}
+                        className={`relative h-20 w-32 shrink-0 overflow-hidden rounded-lg transition-all ${selectedImage === index ? 'ring-2 ring-primary' : 'opacity-70 hover:opacity-100'}`}
                       >
                         <Image
                           src={image}
@@ -309,7 +305,7 @@ export default function SingleRoom({ room }: SingleRoomProps) {
                     <div className="grid gap-3 sm:grid-cols-2">
                       {room.features.map((feature, index) => (
                         <div key={index} className="flex items-center gap-3">
-                          <Check className="h-5 w-5 flex-shrink-0 text-primary" />
+                          <Check className="h-5 w-5 shrink-0 text-primary" />
                           <span className="text-gray-700">{feature}</span>
                         </div>
                       ))}
