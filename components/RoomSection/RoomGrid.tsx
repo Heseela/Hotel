@@ -3,6 +3,7 @@
 import { Room } from '@/types/room.types'
 import { Star, Users, Maximize2, Check, Heart, Eye, Bed } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 
 interface RoomGridProps {
@@ -185,12 +186,9 @@ export default function RoomGrid({ rooms }: RoomGridProps) {
                 >
                   {room.isAvailable ? 'Book Now' : 'Unavailable'}
                 </button>
-                <button 
-                  onClick={() => setQuickView(room.id)}
-                  className="px-4 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center shadow-sm hover:shadow"
-                >
+                 <Link href={`/rooms/${room.slug}`} className="px-4 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center shadow-sm hover:shadow">
                   <Eye className="w-5 h-5" />
-                </button>
+                  </Link>
               </div>
             </div>
           </div>

@@ -30,7 +30,6 @@ export default function Footer() {
     <footer className="bg-secondary text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Hotel Info */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 bg-primary rounded-full"></div>
@@ -56,7 +55,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-xl font-heading font-semibold mb-6">
               Quick Links
@@ -75,7 +73,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h3 className="text-xl font-heading font-semibold mb-6">
               Services
@@ -94,7 +91,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="text-xl font-heading font-semibold mb-6">
               Contact Info

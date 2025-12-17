@@ -3,6 +3,7 @@ import { Room } from "@/types/room.types"
 export const initialRooms: Room[] = [
   {
     id: 1,
+    slug: 'presidential-villa',
     name: 'Presidential Villa',
     description: 'Ultimate luxury with private pool, butler service, and panoramic ocean views. Experience unparalleled privacy and exclusivity.',
     price: 899,
@@ -21,6 +22,7 @@ export const initialRooms: Room[] = [
   },
   {
     id: 2,
+    slug: 'executive-suite',
     name: 'Executive Suite',
     description: 'Spacious suite with separate living area, perfect for business travelers and extended stays.',
     price: 499,
@@ -31,11 +33,12 @@ export const initialRooms: Room[] = [
     category: 'suite',
     amenities: ['Jacuzzi', 'Living Area', 'Work Desk', 'Kitchenette', 'High-Speed WiFi'],
     features: ['City View', 'Balcony', 'High-Speed WiFi', 'Office Setup'],
-    images:['/room-2.jpg'],
+    images: ['/room-2.jpg'],
     isAvailable: true,
   },
   {
     id: 3,
+    slug: 'deluxe-ocean-view',
     name: 'Deluxe Ocean View',
     description: 'Wake up to breathtaking ocean views from your private balcony. Perfect for romantic getaways.',
     price: 299,
@@ -51,6 +54,7 @@ export const initialRooms: Room[] = [
   },
   {
     id: 4,
+    slug: 'standard-king-room',
     name: 'Standard King Room',
     description: 'Comfortable room with essential amenities and serene garden views. Great value for money.',
     price: 199,
@@ -66,6 +70,7 @@ export const initialRooms: Room[] = [
   },
   {
     id: 5,
+    slug: 'family-suite',
     name: 'Family Suite',
     description: 'Perfect for families with connecting rooms, kid-friendly amenities, and entertainment options.',
     price: 399,
@@ -81,6 +86,7 @@ export const initialRooms: Room[] = [
   },
   {
     id: 6,
+    slug: 'honeymoon-suite',
     name: 'Honeymoon Suite',
     description: 'Romantic retreat with special touches for couples celebrating special moments. Includes champagne and rose petals.',
     price: 599,
@@ -96,6 +102,7 @@ export const initialRooms: Room[] = [
   },
   {
     id: 7,
+    slug: 'premium-ocean-suite',
     name: 'Premium Ocean Suite',
     description: 'Luxurious suite with expansive ocean views, premium amenities, and personalized service.',
     price: 699,
@@ -113,6 +120,7 @@ export const initialRooms: Room[] = [
   },
   {
     id: 8,
+    slug: 'garden-villa',
     name: 'Garden Villa',
     description: 'Secluded villa surrounded by tropical gardens with private plunge pool and outdoor living area.',
     price: 799,
@@ -128,6 +136,7 @@ export const initialRooms: Room[] = [
   },
   {
     id: 9,
+    slug: 'business-suite',
     name: 'Business Suite',
     description: 'Designed for productive stays with dedicated workspace, meeting area, and business amenities.',
     price: 449,
