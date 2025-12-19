@@ -119,7 +119,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Horizon Hotel & Resort. All rights reserved.</p>
           <p className="mt-2 text-sm">
-            Designed with ❤️ | Inspired by Unwind Template
+            Designed with ❤️ | Powered by ARIBT
           </p>
         </div>
       </div>
